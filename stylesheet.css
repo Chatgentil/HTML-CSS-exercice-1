@@ -1,0 +1,22 @@
+body {
+    background-color: #dfdad9;
+}
+
+p {
+color: cornflowerblue;
+text-align: center;
+font-size: 2rem;
+}
+
+ol {
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    border: 2rem;
+    margin: 1rem;
+    border-style: double;
+    display: inline-block;
+}
+
+@media screen (min h{
+    
+}

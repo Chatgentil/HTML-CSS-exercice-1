@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo web dev</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+        <p class="paragraphe">Bonjour, nous nous appellons ilan et eliott en classe de e1 a à l'estiam lyon</p>
+        <ol class="liste">
+            <li>
+                <a href="#">Liste 1</a>
+            </li>
+            <li>
+                <a href="#">Liste 2</a>
+            </li>
+            <li>
+                <a href="#">Liste 3</a>
+            </li>
+            <li>
+                <a href="#">Liste 4</a>
+            </li>
+        </ol>
+        <br>
+        <img src="download.jpg" alt="paysage jolie">
+        <figcaption>description de l'image</figcaption>
+        
+        <button onclick="changerTheme()">Changer Thème</button>
+    
+        <script>
+            function changerTheme() {
+                let nouvelleCouleur = getRandomColor();
+    
+                document.body.style.backgroundColor = nouvelleCouleur;
+    
+                let nomUtilisateur = prompt("Entrez votre nom:");
+                if (nomUtilisateur) {
+                    alert("Bienvenue, " + nomUtilisateur + "!");
+                }
+            }
+    
+            function getRandomColor() {
+
+                let lettres = "0123456789ABCDEF";
+                let couleur = "#";
+                for (let i = 0; i < 6; i++) {
+                    couleur += lettres[Math.floor(Math.random() * 16)];
+                }
+                return couleur;
+            }
+        </script>
+</body>
+</html>

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <script src="script.js"></script>
         <p class="paragraphe">Bonjour, nous nous appellons ilan et eliott en classe de e1 a à l'estiam lyon</p>
+        <button onclick="changerTheme()">Changer Thème</button>
         <ol class="liste">
             <li>
                 <a href="#">Liste 1</a>
@@ -25,30 +27,5 @@
         <br>
         <img src="download.jpg" alt="paysage jolie">
         <figcaption>description de l'image</figcaption>
-        
-        <button onclick="changerTheme()">Changer Thème</button>
-    
-        <script>
-            function changerTheme() {
-                let nouvelleCouleur = getRandomColor();
-    
-                document.body.style.backgroundColor = nouvelleCouleur;
-    
-                let nomUtilisateur = prompt("Entrez votre nom:");
-                if (nomUtilisateur) {
-                    alert("Bienvenue, " + nomUtilisateur + "!");
-                }
-            }
-    
-            function getRandomColor() {
-
-                let lettres = "0123456789ABCDEF";
-                let couleur = "#";
-                for (let i = 0; i < 6; i++) {
-                    couleur += lettres[Math.floor(Math.random() * 16)];
-                }
-                return couleur;
-            }
-        </script>
 </body>
 </html>
